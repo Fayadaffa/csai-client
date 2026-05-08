@@ -1,0 +1,20 @@
+/* custom.css */
+/* Styling tambahan yang tidak bisa dilakukan dengan Tailwind utility class biasa */
+
+/* Animasi fade-in sederhana untuk section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Tambahkan custom style lain di sini sesuai kebutuhan Sprint 2 */
