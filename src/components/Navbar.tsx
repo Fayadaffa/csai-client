@@ -1,43 +1,33 @@
-import Container from "./Container";
-import Button from "./Button";
-
-const navLinks = [
-  { label: "Fitur", href: "#features" },
-  { label: "Solusi", href: "#solution" },
-  { label: "Target", href: "#target" },
-  { label: "Kontak", href: "#cta" },
-];
+import { navLinks } from "@/data/landingData";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md">
-      <Container>
-        <nav className="flex h-16 items-center justify-between">
-          <a href="/" className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
-                <circle cx="5" cy="5" r="2.5"/>
-                <circle cx="11" cy="5" r="2.5"/>
-                <circle cx="5" cy="11" r="2.5"/>
-                <circle cx="11" cy="11" r="2.5"/>
-              </svg>
-            </div>
-            <span className="text-sm font-semibold text-slate-800">CSAI Client</span>
-          </a>
+    <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white">
+      <div className="mx-auto flex h-[64px] max-w-6xl items-center justify-between px-6">
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="#5c6bc0" strokeWidth="2"/>
+            <circle cx="16" cy="16" r="5" fill="#5c6bc0"/>
+            <line x1="3" y1="3" x2="29" y2="29" stroke="#5c6bc0" strokeWidth="2" strokeLinecap="round"/>
+            <ellipse cx="16" cy="16" rx="13" ry="6" stroke="#5c6bc0" strokeWidth="1.5" fill="none"/>
+          </svg>
+          <span className="text-base font-bold text-slate-800">CS AI</span>
+        </a>
 
-          <ul className="hidden items-center gap-1 md:flex">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a href={link.href} className="rounded-lg px-3.5 py-2 text-sm text-slate-500 transition-colors hover:bg-slate-50 hover:text-slate-800">
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <Button href="#cta" size="sm">Mulai Sekarang</Button>
+        {/* Nav links */}
+        <nav className="hidden items-center gap-8 md:flex">
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-sm font-normal text-slate-700 hover:text-slate-900"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
-      </Container>
+      </div>
     </header>
   );
 }

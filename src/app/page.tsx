@@ -1,19 +1,24 @@
-import HeroSection from "@/components/sections/HeroSection";
-import ProblemSection from "@/components/sections/ProblemSection";
-import SolutionSection from "@/components/sections/SolutionSection";
-import FeaturesSection from "@/components/sections/FeaturesSection";
-import TargetMarketSection from "@/components/sections/TargetMarketSection";
-import CTASection from "@/components/sections/CTASection";
+// ============================================================
+// app/page.tsx — Sprint 3
+// Urutan section sesuai design reference.
+// ============================================================
 
-export default function HomePage() {
+import HeroSection        from "@/components/landing/HeroSection";
+import ProblemSection     from "@/components/landing/ProblemSection";
+import FeaturesSection    from "@/components/landing/FeaturesSection";
+import SolutionSection    from "@/components/landing/SolutionSection";
+import TargetMarketSection from "@/components/landing/TargetMarketSection";
+import CTASection         from "@/components/landing/CTASection";
+
+export default function LandingPage() {
   return (
-    <>
+    <main>
       <HeroSection />
       <ProblemSection />
-      <SolutionSection />
       <FeaturesSection />
+      <SolutionSection />
       <TargetMarketSection />
       <CTASection />
-    </>
+    </main>
   );
 }

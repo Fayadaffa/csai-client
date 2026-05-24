@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "CSAI Client",
-  description: "Project frontend intern Sprint 1 — Setup & Foundation",
+  title: "CS AI — Ship Customer Success with AI",
+  description: "Automate ticket triage, draft replies, and uncover churn risk with a secure AI assistant built for SaaS teams.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id">
-      <body className="flex min-h-screen flex-col bg-slate-50">
+    <html lang="en">
+      <body className="bg-white text-slate-900 antialiased">
         <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
