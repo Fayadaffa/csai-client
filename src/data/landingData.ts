@@ -9,7 +9,7 @@ import type {
 } from "@/types/landing";
 
 export const navLinks: NavLink[] = [
-  { label: "Features", href: "#features" },
+  { label: "Features", href: "/features" },
   { label: "Pricing",  href: "#pricing"  },
   { label: "About",    href: "#about"    },
 ];
