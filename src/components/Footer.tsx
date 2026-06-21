@@ -14,7 +14,7 @@ export default function Footer() {
                 href={link.href}
                 className="text-slate-400 transition hover:text-slate-700"
               >
-                {link.label}
+                {link.label === "Features" ? "Features" : link.label}
               </a>
             ))}
           </nav>

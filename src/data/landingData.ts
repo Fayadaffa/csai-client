@@ -1,8 +1,3 @@
-// ============================================================
-// src/data/landingData.ts — Sprint 3
-// Konten sesuai design reference screenshot.
-// ============================================================
-
 import type {
   NavLink, HeroData, FeatureItem,
   MetricItem, TrustItem, TestimonialItem, CTAFormField,
@@ -10,8 +5,8 @@ import type {
 
 export const navLinks: NavLink[] = [
   { label: "Features", href: "/features" },
-  { label: "Pricing",  href: "#pricing"  },
-  { label: "About",    href: "#about"    },
+  { label: "Pricing",  href: "/pricing"  },
+  { label: "About",    href: "/about"    },
 ];
 
 export const heroData: HeroData = {

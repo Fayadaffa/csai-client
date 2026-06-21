@@ -1,17 +1,35 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
 
 export default function CTASection() {
   const [form, setForm] = useState({ email: "", name: "", message: "" });
 
+  const handleSendMail = () => {
+    if (!form.email || !form.name) {
+      alert("Please fill in your Name and Email first.");
+      return;
+    }
+
+    const destinationEmail = "support@csai.com";
+    const subject = encodeURIComponent("Request CS AI Walkthrough");
+    const body = encodeURIComponent(
+      `Hello CS AI Team,\n\n` +
+      `I am interested in a CS AI product walkthrough. Here are my details:\n` +
+      `- Name: ${form.name}\n` +
+      `- Email: ${form.email}\n\n` +
+      `Message/Questions:\n${form.message || "No additional message."}`
+    );
+
+    window.location.href = `mailto:${destinationEmail}?subject=${subject}&body=${body}`;
+  };
+
   return (
-    <section id="cta" className="bg-slate-50 py-20 px-6">
+    <section id="cta" className="bg-white py-20 px-6">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
-          {/* Left: illustration + copy */}
           <div className="flex flex-col gap-6 lg:w-1/2">
-            {/* Illustration — PNG from /public/illustrations */}
             <div className="flex justify-center lg:justify-start">
               <Image
                 src="/illustrations/cta-walkthrough.png"
@@ -33,10 +51,8 @@ export default function CTASection() {
             </div>
           </div>
 
-          {/* Right: form */}
           <div className="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm lg:w-1/2">
             <div className="flex flex-col gap-5">
-              {/* Work email */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-slate-700">
                   Work email
@@ -51,7 +67,6 @@ export default function CTASection() {
                 <p className="text-xs text-slate-400">We&apos;ll send a scheduling link.</p>
               </div>
 
-              {/* Name */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-slate-700">Name</label>
                 <input
@@ -63,7 +78,6 @@ export default function CTASection() {
                 />
               </div>
 
-              {/* Message */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-slate-700">Message</label>
                 <textarea
@@ -75,11 +89,10 @@ export default function CTASection() {
                 />
               </div>
 
-              {/* Submit */}
               <button
                 type="button"
+                onClick={handleSendMail}
                 className="mt-1 w-full rounded-xl bg-indigo-600 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
-                onClick={() => alert("Form submitted! We'll be in touch.")}
               >
                 Send Mail
               </button>

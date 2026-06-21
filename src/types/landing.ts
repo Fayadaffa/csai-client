@@ -1,7 +1,3 @@
-// ============================================================
-// src/types/landing.ts — Sprint 3
-// ============================================================
-
 export type NavLink = { label: string; href: string };
 
 export type HeroData = {
