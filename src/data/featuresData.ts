@@ -1,8 +1,3 @@
-// ============================================================
-// src/data/featuresData.ts
-// Data for the /features page — matching design reference.
-// ============================================================
-
 export const featuresHero = {
   badge: "Explore our full feature set",
   headline: "Smart AI.\nHuman Touch.\nBetter Customer\nOutcomes.",
@@ -11,7 +6,7 @@ export const featuresHero = {
 };
 
 export const processFlow = {
-  eyebrow: "How IT All Goes",
+  eyebrow: "HOW IT ALL GOES",
   heading: "From Customer Message to Business Impact",
   description:
     "AI automatically triages incoming customer requests, assigns priority, and routes them effectively.",

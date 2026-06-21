@@ -1,8 +1,3 @@
-// ============================================================
-// src/data/dummyData.ts — CS AI · Sprint 2
-// Konten disesuaikan dengan design landing page dari UI/UX.
-// ============================================================
-
 export const heroData = {
   headline: "CS AI — Ship Customer Success with AI",
   description:

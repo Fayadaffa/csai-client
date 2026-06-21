@@ -1,8 +1,3 @@
-// ============================================================
-// app/page.tsx — Sprint 3
-// Urutan section sesuai design reference.
-// ============================================================
-
 import HeroSection        from "@/components/landing/HeroSection";
 import ProblemSection     from "@/components/landing/ProblemSection";
 import FeaturesSection    from "@/components/landing/FeaturesSection";
@@ -12,7 +7,7 @@ import CTASection         from "@/components/landing/CTASection";
 
 export default function LandingPage() {
   return (
-    <main>
+    <main className="page-transition">
       <HeroSection />
       <ProblemSection />
       <FeaturesSection />

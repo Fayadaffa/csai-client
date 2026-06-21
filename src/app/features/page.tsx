@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function FeaturesPage() {
   return (
-    <main>
+    <main className="page-transition">
       <FeaturesHero />
       <ProcessFlow />
       <PowerfulFeatures />
