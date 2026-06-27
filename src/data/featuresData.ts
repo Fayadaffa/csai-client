@@ -1,8 +1,8 @@
 export const featuresHero = {
-  badge: "Explore our full feature set",
+  badge: "Our Features",
   headline: "Smart AI.\nHuman Touch.\nBetter Customer\nOutcomes.",
   description:
-    "CS AI helps your team manage smarter and deliver exceptional work, and more in an agent-first way.",
+    "CS AI helps your team manage conversations, automate repetitive work, and never miss opportunities.",
 };
 
 export const processFlow = {
@@ -51,37 +51,37 @@ export const powerfulFeatures = {
       title: "AI First Inbox",
       description:
         "A unified inbox powered by AI that automatically prioritizes, categorizes, and surfaces the most critical customer conversations first.",
-      image: "/illustrations/auto-triage.png",
+      image: "/illustrations/auto-triage-v3.png",
     },
     {
       title: "AI with Empathy",
       description:
         "Generate contextual, empathetic draft replies that match your brand voice and customer sentiment for every interaction.",
-      image: "/illustrations/reply-drafts.png",
+      image: "/illustrations/reply-drafts-v3.png",
     },
     {
       title: "Churn Indicator",
       description:
         "Real-time churn risk scoring based on usage patterns, sentiment analysis, and engagement signals across all touchpoints.",
-      image: "/illustrations/churn-signals.png",
+      image: "/illustrations/churn-signals-v3.png",
     },
     {
       title: "Smart Routing",
       description:
         "Intelligently route tickets to the right team member based on expertise, workload, and customer relationship history.",
-      image: "/illustrations/ai-workflows.png",
+      image: "/illustrations/ai-workflows-v3.png",
     },
     {
       title: "Generate Summary",
       description:
         "Instantly generate conversation summaries, action items, and key insights from any customer interaction thread.",
-      image: "/illustrations/ai-summary.png",
+      image: "/illustrations/ai-summary-v3.png",
     },
     {
       title: "Prediction & Insights",
       description:
         "Track deflection rates, SLA performance, agent productivity, and AI accuracy from one unified analytics dashboard.",
-      image: "/illustrations/team-analytics.png",
+      image: "/illustrations/team-analytics-v3.png",
     },
   ],
 };

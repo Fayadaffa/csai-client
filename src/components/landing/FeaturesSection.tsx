@@ -5,12 +5,12 @@ import CsAiLogo from "@/components/CsAiLogo";
 
 // Map feature index to its PNG illustration
 const featureImages = [
-  { src: "/illustrations/auto-triage.png",    alt: "Auto-Triage illustration" },
-  { src: "/illustrations/reply-drafts.png",   alt: "Reply Drafts illustration" },
-  { src: "/illustrations/churn-signals.png",  alt: "Churn Signals illustration" },
-  { src: "/illustrations/ai-workflows.png",   alt: "AI Workflows illustration" },
-  { src: "/illustrations/ai-summary.png",     alt: "AI Summary illustration" },
-  { src: "/illustrations/team-analytics.png", alt: "Team Analytics illustration" },
+  { src: "/illustrations/auto-triage-v3.png",    alt: "Auto-Triage illustration" },
+  { src: "/illustrations/reply-drafts-v3.png",   alt: "Reply Drafts illustration" },
+  { src: "/illustrations/churn-signals-v3.png",  alt: "Churn Signals illustration" },
+  { src: "/illustrations/ai-workflows-v3.png",   alt: "AI Workflows illustration" },
+  { src: "/illustrations/ai-summary-v3.png",     alt: "AI Summary illustration" },
+  { src: "/illustrations/team-analytics-v3.png", alt: "Team Analytics illustration" },
 ];
 
 export default function FeaturesSection() {
