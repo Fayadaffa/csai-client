@@ -17,8 +17,8 @@ export default function CTASection() {
     const body = encodeURIComponent(
       `Hello CS AI Team,\n\n` +
       `I am interested in a CS AI product walkthrough. Here are my details:\n` +
-      `- Name: ${form.name}\n` +
-      `- Email: ${form.email}\n\n` +
+      `  Name: ${form.name}\n` +
+      `  Email: ${form.email}\n\n` +
       `Message/Questions:\n${form.message || "No additional message."}`
     );
 
